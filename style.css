@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@300;400&display=swap');
+
+
+body {
+    width: 100%;
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.category {
+    padding: 7vh 3vw;
+}
+
+#sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+#sedan .learn-more {
+    color:hsl(31, 77%, 52%);
+}
+
+#suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#suv .learn-more {
+    color: hsl(184, 100%, 22%);
+}
+
+#lux {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+#lux .learn-more {
+    color: hsl(179, 100%, 13%);
+}
+
+.category h1 {
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 95%);
+    margin: 4vh 0;
+}
+
+.category p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7;
+}
+
+.learn-more {
+    width: 10vw;
+    aspect-ratio: 6/2;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 30px;
+    font-family: 'Lexend Deca';
+    margin-top: 8.5vh;
+}
+
+.learn-more:hover {
+    cursor: pointer;
+    background-color: hsla(0, 0%, 100%, 0.75);
+}
+
+.attribution {
+    text-align: center;
+    font-family: 'Lexend Deca';
+    margin-top: 2vh;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(184, 100%, 22%);
+    background-image: 
+        linear-gradient(
+            transparent 0%,
+            transparent 90%,
+            hsl(31, 77%, 52%) 90%,
+            hsl(31, 77%, 52%) 100%
+            );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 300ms;
+    };
+
+.attribution a:visited {
+    color:hsl(179, 100%, 13%);
+}
+
+.attribution a:hover {
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+
+@media (min-width:376px) {
+    main {
+        width: 60vw;
+        aspect-ratio: 15/8;
+        margin-left: 20vw;
+        margin-top: 10vh;
+    }
+
+    .category {
+        width: 33%;
+    }
+}
+
+@media (max-width: 376px) {
+    body {
+        height: 100%;
+        padding-top: 80vh;
+    }
+    
+    main {
+        flex-direction: column;
+        height: 80vh;
+        aspect-ratio: 4/7;
+        margin-left: 9vw;
+    }
+
+    .category {
+        padding: 7vh 10vw;
+    }
+
+    #sedan {
+        border-radius: 10px 10px 0 0;
+    }
+
+    #lux {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .category p {
+        font-size: 1rem;
+    }
+
+    .learn-more {
+        width: 40vw;
+        font-size: 0.95rem;
+        margin: 5vh 0 1vh 0;
+    }
+
+    .attribution {
+        margin: 70vh 0 5vh 0;
+    }
+}
